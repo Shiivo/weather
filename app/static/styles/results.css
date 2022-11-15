@@ -1,0 +1,12 @@
+#weatherResults {
+ background-image: url("https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg");
+font-family: 'Lato', san-serif;
+    font-size: 25px;
+    color: white;
+    padding: 30px;
+    display: inline_block;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+
+}

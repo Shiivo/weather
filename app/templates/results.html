@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+ <table id="data" class="table table-striped">
+
+   <thead>
+
+     <tr>
+
+       <th>us_p</th>
+
+       <th>feels_like</th>
+
+       <th>dt_obj</th>
+
+      <th>temp</th>
+
+         <th>weather</th>
+
+       <th>Location</th>
+
+
+     </tr>
+
+   </thead>
+
+   <tbody>
+
+   </tbody>
+
+ </table>
+
+
+
+
+
+{% endblock %}
+
+
+
+{% block scripts %}
+
+ <script>
+
+   $(document).ready(function () {
+
+     $('#data').DataTable({
+
+       ajax: '/api/results',
+
+       pageLength: 25,
+
+       columns: [
+
+         {data: 'us_p'},
+
+         {data: 'feels_like'},
+
+         {data: 'dt_obj'},
+         {data: 'temp'},
+         {data: 'weather'},
+         {data: 'location'}
+
+       ],
+
+     });
+
+   });
+
+ </script>
+
+{% endblock %}
